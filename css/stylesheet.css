@@ -1,0 +1,290 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+ul{
+  list-style: none;
+  padding: 10px 0;
+}
+
+
+#loading{
+  background: black; 
+  height: 100%;
+  width: 100%;
+  position: fixed; 
+  text-align: center;
+}
+
+.o228-text{
+  color: #aaaaaa;
+  font-size: 124px; 
+  display: inline-block;
+  margin-top: 20%; 
+}
+
+header{
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  opacity: 0.8;
+  color: white;
+  line-height: 0px;
+  display: none;
+  z-index: 100;
+}
+
+header h1{
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+	min-width: 1000px;
+	max-width: 1200px;
+}
+
+.header-left{
+  float: left;
+}
+
+.header-right{
+  float: right;
+}
+
+
+.video-wrapper{
+  position: fixed; 
+  z-index: -100;
+  display: none;
+	width: 100%;
+}
+
+.background-video{
+  width: 100%;
+}
+
+
+main{
+  padding-top: 80px; 
+}
+
+main h2{
+	text-align: center;
+	font-size: 48px;
+	color: white;	
+	opacity: 0.8;	
+	cursor: pointer;
+	display: none;
+}
+
+main h2:hover{
+	opacity: 1;
+}
+
+.know{
+	margin-top: 240px;
+}
+
+.known{
+	margin-top: 5px;
+}
+
+.contents{
+  background-color: rgba(255,255,255,0.8); 
+  margin: 0 auto;
+  padding: 5px 0;
+  border-radius: 30px;
+	position: relative;
+}
+
+.contents1{
+  height: 500px;
+  display: none;
+}
+
+.contents1-left{
+  float: left;
+}
+
+.oniya-intro{
+  width: 60%;
+}
+
+.contents1-right{
+  position: absolute;
+	top: 50px;
+	right: 50px;
+  width: 60%; 
+}
+
+.contents1-right h1{
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.contents p{
+  font-size: 20px;
+}
+
+.btn{
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 5px 5px 0 0;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+
+.youtube{
+  background-color: #da2921
+}
+
+.twitch{
+  background-color: #9147ff
+}
+
+.twitter{
+  background-color: #00acee
+}
+
+
+.achivement{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.achivement:hover{
+	opacity: 1;
+}
+
+.contents2{
+	display: none;
+	color: white;
+}
+
+.contents2 h1{
+	font-size: 64px;
+}
+
+.contents2 ul{
+	font-size: 48px;
+}
+
+.contents2 li{
+	line-height: 88px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.contents2 li:hover{
+	opacity: 1;
+}
+
+.home{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.home:hover{
+	opacity: 1;
+}
+
+
+.tsm{
+	height: 650px;
+  display: none;
+	color: black;
+	margin-bottom: 100px;
+}
+
+.tsm-member{
+	text-align: center;
+}
+
+.tsm-team{
+	z-index: 5;
+}
+
+.oniya-tsm{
+  height: 550px; 
+	z-index: 10;
+}
+
+.albra-tsm{
+	position: absolute;
+	height: 500px;
+	left: 100px;
+	top: 124px;
+}
+
+.imperial-tsm{
+	position: absolute;
+	height: 500px;
+	right: 100px;
+	top: 124px;
+}
+
+.ape{
+	height: 600px;
+	display: none;
+	color: black;
+	margin-bottom: 100px;
+}
+
+.ape-left{
+  float: left;
+	width: 30%;
+}
+
+.ape-left-top{
+
+}
+
+.ape-left-bottom{
+
+}
+
+.ape-oniya{
+	height: 300px;
+	position: absolute;
+	left: 80px;
+}
+
+.ape-shaka{
+	position: absolute;
+	left: 20px;
+	top: 300px;
+	height: 300px;
+}
+
+.ape-yoshinama{
+	position: absolute;
+	height: 300px;
+	top: 300px;
+	left: 150px;
+}
+
+.ape-right{
+	float: right;
+	margin-top: 100px;
+}
+
+.result{
+	display: none;
+	height: 320px;
+	padding: 30px 30px;
+	text-align: center;
+}
+
+

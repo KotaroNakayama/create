@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>o-228</title>
+    <link rel="icon" type="image/png" href="./img/oniya-icon.png">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+  </head>
+
+  <body> 
+    <div id="loading">
+      <h1 class="o228-text">o-228</h1>
+    </div> 
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h1 class="home">o-228 おにや</h1>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li class="achivement">実績</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="video-wrapper">
+      <video class="background-video" src="./mov/background-video.mp4" autoplay loop muted>
+    </div>
+
+    <main>
+      <div class="container">
+				<h2 class="know">おにやを知る</h2>
+        <div class="contents contents1">
+          <div class="container">
+            <div class="contents1-left">
+              <img class="oniya-intro" src="./img/oniya-intro.png">
+            </div>
+            <div class="contents1-right">
+              <h1>おにや（o-228）</h1>
+              <p>&nbsp;人気急上昇中のゲーム実況者。かつては「シャドウバース」や「荒野行動」といったゲームを集中して実況していたが、現在では様々なゲームを実況している。<br>
+							&nbsp;ゲームの腕前はどれも平均以下であるものの、まるでトッププレイヤーであると視聴者らが錯覚してしまうほどのゲーム実況力・講釈力を持ち合わせている。<br>
+							&nbsp;おにやの代名詞として「GG Guys」、「失礼、アルブラレリー」、「結論構成」、「Hey, chuts?」などが挙げられるが、大半は海外Apexプロの真似事による賜物である。</p>	
+      				<a class="btn youtube" href="https://www.youtube.com/c/おにやo228/featured" target="_blank" rel="noopener noreferrer">Youtube</a>
+	    				<a class="btn twitch" href="https://www.twitch.tv/oniyadayo" target="_blank" rel="noopener noreferrer">twitch</a>
+	    				<a class="btn twitter" href="https://twitter.com/oniyanogame" target="blank" rel="noopener noreferrer">Twitter</a>
+	    			</div>
+          </div>
+        </div> 
+      </div>
+		<h2 class="known">おにやを理解した</h2>
+
+		<div class="contents2">
+			<div class="container">
+				<h1>実績</h1>
+				<ul>
+					<li class="tsm-open">元「TSM」所属</li>
+					<div class="contents tsm">
+						<div class="container">
+							<p>海外Apexプロチーム「TSM」元所属。</p>
+							<div class="tsm-member">
+								<img class="tsm-team albra-tsm" src="./img/albra-tsm.png">
+								<img class="tsm-team oniya-tsm" src="./img/oniya-tsm.png">
+								<img class="tsm-team imperial-tsm" src="./img/imperial-tsm.png">
+							</div>
+						</div>
+					</div>
+					<li class="ape-open">「えぺまつり夏の陣」優勝</li>
+					<div class="contents ape">
+						<div class="container">
+							<p>チーム「結論構成」、釈迦・よしなまと共に優勝</p>
+							<div class="ape-left">
+								<div class="ape-left-top">
+									<img class="ape-oniya" src="./img/ape-oniya.png">
+								</div>
+								<div class="ape-left-bottom">
+									<img class="ape-shaka" src="./img/ape-shaka.png">
+									<img class="ape-yoshinama" src="./img/ape-yoshinama.png">
+								</div>
+							</div> 
+							<div class="ape-right">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/KPVEC5tjpIU?start=13631" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>			
+						</div>
+					</div>
+					<li class="result-open">結論構成解説</li>
+					<div class="contents result">	
+						<div class="container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/RP3gPpp3Te8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        window.onload=function(){
+          $('#loading').fadeOut();
+	        $('header').fadeIn();
+	        $('.video-wrapper').fadeIn();
+					$('.know').fadeIn();
+        }
+
+				$('.know').click(function(){
+					$('.know').slideUp();
+					$('.contents1').slideDown();
+					$('.known').slideDown();
+					$('.background-video').animate({
+						"opacity":"0.3"},300);
+				})
+
+				$('.known').click(function(){
+					$('.contents1').slideUp();
+          $('.known').slideUp();
+					$('.know').slideDown();
+					$('.background-video').animate({
+						"opacity":"1"},300);
+				})
+				
+				$('.achivement').click(function(){
+					homeInit();
+					$('.contents2').slideDown();
+				})
+
+				$('.home').click(function(){
+					$('.contents2').hide();
+					homeInit();
+					$('.know').fadeIn();
+					$('.background-video').animate({
+						"opacity":"1"},300);
+					openInit();
+				})
+				
+        $('.tsm-open').click(function(){
+					if($(this).hasClass('open')){
+						$(this).removeClass('open');
+						$('.tsm').slideUp();
+					}else{
+						$(this).addClass('open');
+						$('.tsm').slideDown();
+					}
+				})
+
+				
+        $('.ape-open').click(function(){
+					if($(this).hasClass('open')){
+						$(this).removeClass('open');
+						$('.ape').slideUp();
+					}else{
+						$(this).addClass('open');
+						$('.ape').slideDown();
+					}
+				})
+
+				function homeInit(){	
+					$('.know').hide();
+					$('.known').hide();
+					$('.contents1').hide();
+					$('.background-video').animate({
+						"opacity":"0.3"},300);
+				}
+
+				function openInit(){
+					$('.tsm').hide();
+					$('.tsm-open').removeClass('open');
+					$('.ape').hide();	
+					$('.ape-open').removeClass('open');
+					$('.result').hide();	
+					$('.result-open').removeClass('open');
+				}
+
+				
+        $('.result-open').click(function(){
+					if($(this).hasClass('open')){
+						$(this).removeClass('open');
+						$('.result').slideUp();
+					}else{
+						$(this).addClass('open');
+						$('.result').slideDown();
+					}
+				})
+      })
+    </script> 
+  </body>
+</html>
